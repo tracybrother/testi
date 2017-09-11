@@ -17,9 +17,9 @@ public class Main1 {
 	@Before
 	public void beforeConfig() throws Exception{
 		String resource ="sqlMapConfig.xml";
-		//¶ÁÈ¡mybatisµÄÈ«¾ÖÅäÖÃÎÄ¼þ
-		InputStream inputStream = Resources.getResourceAsStream(resource);
-		//»ñÈ¡sqlSessionFactory
+		//ï¿½ï¿½È¡mybatisï¿½ï¿½È«ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½
+		 InputStream inputStream = Resources.getResourceAsStream(resource);
+		//ï¿½ï¿½È¡sqlSessionFactory
 		sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream);
 		
 	}
@@ -42,7 +42,7 @@ public class Main1 {
 	@Test
 	public void testDaoFindUserByUsername(){
 		UserDaoImpl userDao = new UserDaoImpl(sqlSessionFactory);
-		List<User> list = userDao.findUserByUsername("ÕÅ");
+		List<User> list = userDao.findUserByUsername("ï¿½ï¿½");
 		
 		System.out.println(list);
 		
