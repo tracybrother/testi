@@ -13,7 +13,7 @@ public class UserDaoImpl implements UserDao {
 	private SqlSessionFactory sqlSessionFactory;
 	public UserDaoImpl(SqlSessionFactory sqlSessionFactory){
 		
-		this.sqlSessionFactory=sqlSessionFactory;
+		   this.sqlSessionFactory=sqlSessionFactory;
 	}
 	
 	@Override
